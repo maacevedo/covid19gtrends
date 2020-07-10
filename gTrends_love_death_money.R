@@ -15,6 +15,7 @@ library(cowplot)
 library(dplyr)
 library(patchwork) # To display 2 charts together
 library(hrbrthemes)
+library(ggpubr)
 
 #Import data for all variables in 2020
 data.20 <- read.csv("data_jan_jun_2020.csv",skip=1,header=TRUE)
