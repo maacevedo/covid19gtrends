@@ -2,7 +2,7 @@
 #Detrending analysis of Google trends
 #online learning
 #US
-#Programer: Miguel Acevedo
+#Programmer: Miguel Acevedo
 #9/7/20
 #########################################
 
@@ -11,7 +11,7 @@ library(dplyr)
 library(patchwork) # To display 2 charts together
 library(hrbrthemes)
 
-#Fromat data
+#Format data
 ol.data<- read.csv("online_learning_US.csv",skip=2,header=TRUE)
 names(ol.data) <- c("date","ol") 
 
@@ -37,7 +37,7 @@ ggplot(df.m, aes(x=date)) +
     # Features of the first axis
     name = "Relative interest in online learning",
     # Add a second axis and specify its features
-    sec.axis = sec_axis(~.*coeff, name="Number of Conformed Covid19 cases")
+    sec.axis = sec_axis(~.*coeff, name="Number of Conformed COVID-19 cases")
   ) + 
   theme_ipsum() +
   theme(
