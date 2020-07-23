@@ -87,7 +87,7 @@ p20 <- ggplot(data.20.c, aes(x=Day)) +
     # Features of the first axis
     name = "",lim=c(0,100),
     # Add a second axis and specify its features
-    sec.axis = sec_axis(~.*coeff, name="Global number of Covid19 cases")
+    sec.axis = sec_axis(~.*coeff, name="Global number of COVID-19 cases")
   ) + 
   theme_ipsum() +
   theme(
